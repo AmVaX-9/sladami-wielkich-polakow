@@ -93,25 +93,27 @@ function Home() {
             <section className="about-section">
                 <h3>O PROJEKCIE</h3>
                 <p>
-                    Gra terenowa <strong>„Śladami Wielkich Polaków”</strong> to inicjatywa edukacyjno-społeczna realizowana na terenie Lublina,
-                    której celem jest wzmacnianie odporności społecznej poprzez przypominanie dorobku wybitnych postaci.
+                    Gra terenowa <strong>„Śladami Wielkich Polaków”</strong> to inicjatywa edukacyjno-społeczna realizowana na terenie Lublina, której celem jest wzmacnianie odporności społecznej poprzez przypominanie dorobku Wielkich Polaków. Wierzymy, że rezyliencji nie buduje się samą teorią. Buduje się ją poprzez kontakt z prawdziwymi historiami ludzi, którzy mimo trudności potrafili działać, podejmować decyzje i zmieniać rzeczywistość wokół siebie.
                 </p>
                 <p>
-                    Wierzymy, że rezyliencji nie buduje się samą teorią. Buduje się ją poprzez kontakt z prawdziwymi historiami ludzi,
-                    którzy mimo trudności potrafili działać, podejmować decyzje i zmieniać rzeczywistość wokół siebie.
+                    Gra łączy ruch w przestrzeni miejskiej z refleksją nad historią i odpowiedzialnością za własny rozwój. W 10 lokalizacjach na terenie Lublina umieszczone zostaną plakaty z kodami QR. Po ich zeskanowaniu uczestnicy poznają krótką historię wybitnej postaci związanej z Lubelszczyzną oraz otrzymają zadanie konkursowe. Każda z tych historii pokazuje, że odporność psychiczna, systematyczność i gotowość do działania były realnym fundamentem sukcesu.
+                </p>
+                <p>
+                    Poprzez upamiętnianie dorobku tych postaci chcemy pokazać, że odporność społeczna nie jest chwilowym trendem, ale wartością, która od pokoleń pozwalała budować kulturę, naukę, instytucje i wspólnotę. Rezyliencja to umiejętność podnoszenia się po porażkach, konsekwencja w dążeniu do celu i odpowiedzialność za innych.
+                </p>
+                <p>
+                    Zadania w grze odnoszą się do konkretnych postaw: wytrwałości mimo przeciwności, odwagi w podejmowaniu decyzji, pracy nad sobą czy działania na rzecz wspólnoty. Dzięki temu uczestnicy nie tylko poznają historię, ale mogą zastanowić się, jak te wartości wykorzystać w swoim życiu – w szkole, w relacjach i w przyszłej pracy.
+                </p>
+                <p>
+                    Projekt ma na celu wzmacnianie rezyliencji poprzez kontakt z inspirującymi biografiami, pielęgnowanie pamięci o Wielkich Polakach jako elemencie naszej tożsamości oraz budowanie poczucia sprawczości i odpowiedzialności społecznej. To także okazja do integracji lokalnej społeczności wokół wspólnych wartości.
                 </p>
 
                 <div className="quote-box">
-                    „Gra jest symboliczną drogą – od historii do teraźniejszości, od pamięci do działania.”
+                    „Gra jest symboliczną drogą – od historii do teraźniejszości, od pamięci do działania. Pokazuje, że odporność społeczna zaczyna się od małych kroków: od podjęcia wyzwania, od wyjścia z domu, od zeskanowania pierwszego kodu, od wykonania pierwszego zadania.”
                 </div>
 
                 <p>
-                    W 10 lokalizacjach na terenie Lublina znajdziesz plakaty z kodami QR. Każda stacja to krótka historia
-                    i zadanie, które odnosi się do konkretnych postaw: wytrwałości, odwagi czy działania na rzecz wspólnoty.
-                </p>
-                <p>
-                    To nie tylko forma zabawy, ale doświadczenie, które ma inspirować do świadomego działania.
-                    Bo historia nie jest zamkniętym rozdziałem – jest źródłem siły, z którego możemy czerpać każdego dnia.
+                    To nie tylko forma zabawy, ale doświadczenie, które ma inspirować do świadomego działania. Bo historia nie jest zamkniętym rozdziałem. Jest punktem odniesienia i źródłem siły, z którego możemy czerpać każdego dnia.
                 </p>
             </section>
 
