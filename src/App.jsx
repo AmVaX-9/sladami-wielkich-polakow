@@ -5,7 +5,7 @@ import './App.css';
 const tasksData = {
     "wp-01-kj92xLp4vM7nQrt8Z5": {
         name: "Wincenty Pol",
-        img: "1pol.JPG",
+        images: ["1a1pol.jpg", "1a2pol.jpg"],
         prompt: "Jedna rzecz, którą mogę zrobić już dziś, zamiast odkładać ją na później."
     },
     "kj-02-bH6mN3k8fV2pL9xZ1w": {
