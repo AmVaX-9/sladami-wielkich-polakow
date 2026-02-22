@@ -101,7 +101,7 @@ function Home() {
 
             <div className="interactive-map-container">
                 <iframe
-                    src="https://www.google.com/maps/d/edit?mid=1eSk8bzMUuHuczebPE8UWC5YhhYzjilQ&ll=51.249882566566896%2C22.568986212928607&z=14"
+                    src="https://maps.app.goo.gl/QLqPtty9U2y5tUjW7"
                     className="interactive-map"
                     title="Mapa punktów gry terenowej"
                     loading="lazy"
