@@ -80,8 +80,12 @@ function Home() {
 
             <header>
                 <h1>Śladami Wielkich Polaków</h1>
-                <img src="assets/LoGoS.png" alt="Logo twórców" className="creator-logo" />
-                <p className="subtitle">02.03 - 27.03.2026 | Lublin</p>
+
+                <div className="date-container">
+                    <img src="assets/LoGoS.png" alt="Logo twórców" className="creator-logo-small" />
+                    <p className="subtitle">02.03 - 27.03.2026 | Lublin</p>
+                </div>
+
             </header>
 
             <img src="assets/mapa-lublin.jpg" alt="Mapa gry" className="map-image" />
