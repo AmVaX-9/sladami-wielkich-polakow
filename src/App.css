@@ -38,7 +38,6 @@ body {
   width: 60px; /* Zmniejszamy logo, żeby pasowało do tekstu */
   height: auto;
   border-radius: 8px; /* Zachowujemy lekkie zaokrąglenie rogów */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Dodaje bardzo delikatny cień, żeby logo się odcinało od tła */
 }
 
 /* Usuwamy domyślne marginesy daty, żeby równo stała z logo */
