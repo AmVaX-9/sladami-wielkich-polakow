@@ -138,17 +138,17 @@ footer {
 
 .interactive-map-container {
   width: 100%;
-  max-width: 600px; /* Zatrzymuje szerokość na komputerach */
+  max-width: 600px;
   margin: 0 auto 25px auto;
-  border-radius: 15px; /* Zaokrągla rogi */
-  overflow: hidden; /* Wymusza, by kanciaste rogi mapy Google zostały ucięte do zaokrąglenia */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Delikatny cień */
-  background-color: #e5e7eb; /* Tło zastępcze podczas ładowania mapy */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background-color: #e5e7eb;
 }
 
 .interactive-map {
   width: 100%;
-  height: 450px; /* Optymalna wysokość do wygodnego przeglądania na telefonie */
+  height: 450px;
   border: none;
   display: block;
 }
