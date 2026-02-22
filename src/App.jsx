@@ -101,7 +101,7 @@ function Home() {
 
             <div className="interactive-map-container">
                 <iframe
-                    src="https://maps.app.goo.gl/QLqPtty9U2y5tUjW7"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159930.5636065561!2d22.404223126830743!3d51.21811652399201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472257141e154061%3A0x5528ee7af6e8e95f!2sLublin!5e0!3m2!1spl!2spl!4v1708600000000!5m2!1spl!2spl"
                     className="interactive-map"
                     title="Mapa punktów gry terenowej"
                     loading="lazy"
