@@ -62,3 +62,45 @@ footer {
   color: #b45309;
   font-weight: bold;
 }
+
+.about-section {
+  text-align: left;
+  line-height: 1.6;
+  margin: 30px 0;
+  padding: 0 10px;
+  font-size: 0.95rem;
+}
+
+.about-section h3 {
+  text-align: center;
+  color: var(--primary);
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.prize-text {
+  font-weight: bold;
+  color: #d97706; /* Ciemniejszy pomarańczowy */
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.quote-box {
+  background: #fffbeb;
+  border-left: 4px solid var(--primary);
+  padding: 15px;
+  font-style: italic;
+  margin: 20px 0;
+  color: #92400e;
+}
+
+footer {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 20px;
+  margin-top: 40px;
+  color: #6b7280;
+}
