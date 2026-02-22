@@ -15,43 +15,42 @@ const tasksData = {
     },
     "hl-03-zP9vR4mL7k2xQ8nB5j": {
         name: "Hieronim Łopaciński",
-        img: "3lopacinski.JPG",
+        images: ["3a1lopacinski.jpg", "3a2lopacinski.jpg"],
         prompt: "Co zrobiłeś/zrobiłaś w 5 minut, zamiast odkładać to na potem? (Prześlij dowód)"
     },
-    // Uwaga: Plik dla Wojewody nie widnieje na liście assets, użyjemy placeholder'a lub dodaj plik "wojewoda.JPG"
     "wl-04-mK7xL2pQ9vR4nB8j3w": {
         name: "Wojewoda Lubelski",
-        img: "4prus.JPG", // Przypisane do 4prus.JPG wg Twojej listy, sprawdź czy to celowe
+        img: "4a1wojewoda.jpg",
         prompt: "Wyślij nazwę najbliższego terminu oraz ile dni zostało do jego realizacji."
     },
     "bp-05-vR4nB8j3wM7xL2pQ9k": {
         name: "Bolesław Prus",
-        img: "4prus.JPG",
+        images: ["5a1prus.jpg", "5a2prus.jpg"],
         prompt: "Nagraj taneczny trend z TikToka z #nieprzespijjutra i oznaczeniem @nie.przespij.jutra"
     },
     "msc-06-bH6mN3k8fV2pL9xZ1x": {
         name: "Maria Skłodowska-Curie",
-        img: "5sklodowska.JPG",
+        images: ["6a1sklodowka.jpg", "6a2sklodowka.jpg"],
         prompt: "Wyślij zdjęcie swojego szkicu z podpisem: 'Moje marzenie w obrazie'."
     },
     "jc-07-zP9vR4mL7k2xQ8nB5v": {
         name: "Józef Czechowicz",
-        img: "6czechowicz.JPG",
+        images: ["7a1czechowicz.jpg", "7a2czechowicz.jpg"],
         prompt: "Prześlij zdjęcie lub opis z podpisem: 'Mój mały gest dla społeczności'."
     },
     "jh-08-mK7xL2pQ9vR4nB8j3y": {
         name: "Julia Hartwig",
-        img: "7hartwig.JPG",
+        images: ["8a1hartwig.jpg", "8a2hartwig.jpg"],
         prompt: "Wymyśl zadanie na jutro, które przybliży Cię do celu. Wyślij: 'Mój plan na jutro: ...'"
     },
     "ss-09-vR4nB8j3wM7xL2pQ9z": {
         name: "Stanisław Staszic",
-        img: "8staszic.JPG",
+        images: ["9a1staszic.jpg", "9a2staszic.jpg"],
         prompt: "Wyślij: 'Stanowisko: ... | Umiejętność do rozwoju: ...' z portalu Pracuj.pl"
     },
     "ijp-10-bH6mN3k8fV2pL9xZ1q": {
         name: "Ignacy Jan Paderewski",
-        img: "9paderewski.JPG",
+        images: ["10a1paderewski.jpg", "10a2paderewski.jpg"],
         prompt: "Napisz o jednej szansie na rozwój (stypendium, kurs), z której chcesz skorzystać."
     }
 };
