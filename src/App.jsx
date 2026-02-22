@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
+// 1. Zmień import na HashRouter
+import { HashRouter as Router, Routes, Route, useParams } from 'react-router-dom';
 import './App.css';
 
-// Słownik zadań z 20-znakowymi "solami" (zgodnie z PDF)
 const tasksData = {
     "wp-01-kj92xLp4vM7nQrt8Z5": {
         name: "Wincenty Pol",
@@ -59,20 +59,17 @@ const tasksData = {
 function TaskPage() {
     const { slug } = useParams();
     const task = tasksData[slug];
-
-    if (!task) return <div className="container"><h1>Nie znaleziono zadania!</h1><a href="/">Wróć do mapy</a></div>;
+    if (!task) return <div className="container"><h1>Nie znaleziono zadania!</h1><a href="#/">Wróć do mapy</a></div>;
 
     return (
         <div className="container">
-            <img src={`/assets/${task.img}`} alt={task.name} className="task-image" />
+            {/* 2. Usuwamy /src/ z początku ścieżki, jeśli przeniosłeś folder assets do public */}
+            <img src={`assets/${task.img}`} alt={task.name} className="task-image" />
             <div className="task-card">
-                <h3>TWOJE ZADANIE:</h3>
                 <p>{task.prompt}</p>
-                <a href="https://www.instagram.com/nie.przespij.jutra/" target="_blank" rel="noreferrer" className="btn-insta">
-                    WYŚLIJ NA INSTAGRAM
-                </a>
+                <a href="https://www.instagram.com/nie.przespij.jutra/" className="btn-insta">WYŚLIJ NA INSTAGRAM</a>
             </div>
-            <a href="/" className="btn-back">Wstecz do mapy</a>
+            <a href="#/" className="btn-back">Wstecz do mapy</a>
         </div>
     );
 }
@@ -80,19 +77,12 @@ function TaskPage() {
 function Home() {
     return (
         <div className="container">
-            <header>
-                <h1>Śladami Wielkich Polaków</h1>
-                <p className="subtitle">02.03 - 27.03.2026 | Lublin</p>
-            </header>
-            <img src="/assets/mapa-lublin.jpg" alt="Mapa gry" className="map-image" />
+            <h1>Śladami Wielkich Polaków</h1>
+            {/* 3. Poprawiona ścieżka do mapy */}
+            <img src="assets/mapa-lublin.jpg" alt="Mapa gry" className="map-image" />
             <div className="info-card">
-                <p>Znajdź punkty na mapie i zeskanuj kody QR!</p>
-                <p><strong>Nagrody do 200 PLN czekają!</strong></p>
-                <a href="/REGULAMIN.pdf" target="_blank" className="btn-reg">REGULAMIN GRY</a>
+                <a href="REGULAMIN.pdf" target="_blank" className="btn-reg">REGULAMIN GRY</a>
             </div>
-            <footer>
-                Projekt realizowany przez „Nie prześpij jutra”
-            </footer>
         </div>
     );
 }
@@ -102,6 +92,7 @@ export default function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
+                {/* Usunięcie /zadanie/ sprawi, że linki będą krótsze */}
                 <Route path="/:slug" element={<TaskPage />} />
             </Routes>
         </Router>
