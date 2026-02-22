@@ -78,10 +78,9 @@ function Home() {
     return (
         <div className="container">
 
-            <img src="assets/LoGoS.png" alt="Logo twórców" className="creator-logo" />
-
             <header>
                 <h1>Śladami Wielkich Polaków</h1>
+                <img src="assets/LoGoS.png" alt="Logo twórców" className="creator-logo" />
                 <p className="subtitle">02.03 - 27.03.2026 | Lublin</p>
             </header>
 
@@ -123,7 +122,7 @@ function Home() {
 
             <footer>
                 <p>Projekt realizowany przez <strong>„Nie prześpij jutra”</strong></p>
-                <p>w ramach ogólnopolskiej olimpiady „Zwolnieni z Teorii”</p>
+                <p>w ramach Ogólnopolskiej Olimpiady „Zwolnieni z Teorii”</p>
             </footer>
         </div>
     );
