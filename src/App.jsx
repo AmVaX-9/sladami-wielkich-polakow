@@ -77,12 +77,23 @@ function TaskPage() {
 function Home() {
     return (
         <div className="container">
-            <h1>Śladami Wielkich Polaków</h1>
-            {/* 3. Poprawiona ścieżka do mapy */}
+            <header>
+                <h1>Śladami Wielkich Polaków</h1>
+                <p className="subtitle">02.03 - 27.03.2026 | Lublin</p>
+            </header>
+
             <img src="assets/mapa-lublin.jpg" alt="Mapa gry" className="map-image" />
+
             <div className="info-card">
+                <p>Znajdź punkty na mapie i zeskanuj kody QR!</p>
+                <p className="prize-text">Nagrody do 200 PLN czekają!</p>
                 <a href="REGULAMIN.pdf" target="_blank" className="btn-reg">REGULAMIN GRY</a>
             </div>
+
+            <footer>
+                <p>Projekt realizowany przez „Nie prześpij jutra”</p>
+                <p>w ramach ogólnopolskiej olimpiady „Zwolnieni z Teorii”</p>
+            </footer>
         </div>
     );
 }
