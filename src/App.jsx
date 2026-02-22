@@ -10,7 +10,7 @@ const tasksData = {
     },
     "kj-02-bH6mN3k8fV2pL9xZ1w": {
         name: "Królowa Jadwiga",
-        img: "2jadwiga.JPG",
+        images: ["2a1jadwiga.jpg", "2a2jadwiga.jpg"],
         prompt: "Jaką jedną umiejętność zdobytą w szkole uważasz za najważniejszą w przyszłej pracy?"
     },
     "hl-03-zP9vR4mL7k2xQ8nB5j": {
@@ -63,11 +63,26 @@ function TaskPage() {
 
     return (
         <div className="container">
-            {/* 2. Usuwamy /src/ z początku ścieżki, jeśli przeniosłeś folder assets do public */}
-            <img src={`assets/${task.img}`} alt={task.name} className="task-image" />
+            <h2>{task.name}</h2>
+
+            {/* NOWA SEKCJA: Wyświetlanie wielu obrazków (jeśli istnieją) */}
+            {task.images && task.images.map((imageFile, index) => (
+                <img
+                    key={index}
+                    src={`assets/${imageFile}`}
+                    alt={`${task.name} - część ${index + 1}`}
+                    className="task-image"
+                />
+            ))}
+
+            {/* STARA SEKCJA: Wyświetlanie pojedynczego obrazka (dla reszty postaci) */}
+            {task.img && (
+                <img src={`assets/${task.img}`} alt={task.name} className="task-image" />
+            )}
+
             <div className="task-card">
                 <p>{task.prompt}</p>
-                <a href="https://www.instagram.com/nie.przespij.jutra/" className="btn-insta">WYŚLIJ NA INSTAGRAM</a>
+                <a href="https://www.instagram.com/nie.przespij.jutra/" target="_blank" rel="noopener noreferrer" className="btn-insta">WYŚLIJ NA INSTAGRAM</a>
             </div>
             <a href="#/" className="btn-back">Wstecz do mapy</a>
         </div>
