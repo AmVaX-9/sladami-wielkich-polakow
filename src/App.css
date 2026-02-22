@@ -12,17 +12,21 @@ body {
 }
 
 .container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
+  width: 90%; /* Automatycznie zajmuje 90% szerokości każdego urządzenia */
+  max-width: 800px; /* ALE zatrzymuje się na 800px, żeby nie wyglądać dziwnie na wielkich telewizorach */
+  margin: 0 auto; /* Magiczna komenda, która zawsze wyśrodkowuje stronę */
+  padding: 20px 0;
   text-align: center;
 }
 
 .map-image, .task-image {
-  width: 100%;
+  width: 100%; /* Zdjęcie zawsze wypełnia dostępne dla niego miejsce */
+  max-width: 600px; /* Na komputerze mapa nie urośnie bardziej niż 600px, żeby nie trzeba było scrollować pół dnia */
+  height: auto; /* Automatycznie dba o to, żeby zdjęcie nie było spłaszczone */
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   margin-bottom: 20px;
+  display: inline-block;
 }
 
 .task-card, .info-card {
@@ -113,7 +117,8 @@ footer {
 }
 
 .creator-logo {
-  max-width: 150px;
+  width: 100%;
+  max-width: 200px; /* Logo automatycznie się kurczy na maleńkich telefonach, ale nie przekracza 200px na PC */
   height: auto;
   margin: 0 auto 20px auto;
   display: block;
