@@ -77,6 +77,9 @@ function TaskPage() {
 function Home() {
     return (
         <div className="container">
+
+            <img src="assets/logo.jfif" alt="Logo twórców" className="creator-logo" />
+
             <header>
                 <h1>Śladami Wielkich Polaków</h1>
                 <p className="subtitle">02.03 - 27.03.2026 | Lublin</p>
@@ -88,6 +91,7 @@ function Home() {
                 <p>Znajdź punkty na mapie i zeskanuj kody QR!</p>
                 <p className="prize-text">Nagrody do 200 PLN czekają!</p>
                 <a href="REGULAMIN.pdf" target="_blank" className="btn-reg">REGULAMIN GRY</a>
+                <p className="terms-text">Biorąc udział w grze akceptujesz regulamin!</p>
             </div>
 
             <section className="about-section">

@@ -104,3 +104,18 @@ footer {
   margin-top: 40px;
   color: #6b7280;
 }
+
+.terms-text {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.creator-logo {
+  max-width: 150px;
+  height: auto;
+  margin: 0 auto 20px auto;
+  display: block;
+  border-radius: 10px;
+}
