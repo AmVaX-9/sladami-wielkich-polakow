@@ -78,7 +78,7 @@ function Home() {
     return (
         <div className="container">
 
-            <img src="assets/logo.jfif" alt="Logo twórców" className="creator-logo" />
+            <img src="assets/LoGoS.png" alt="Logo twórców" className="creator-logo" />
 
             <header>
                 <h1>Śladami Wielkich Polaków</h1>
