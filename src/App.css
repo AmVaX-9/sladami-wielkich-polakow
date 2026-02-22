@@ -25,27 +25,25 @@ body {
   text-align: center;
 }
 
-/* --- USTAWIENIA DLA LOGO I DATY OBOK SIEBIE --- */
 .date-container {
   display: flex;
-  align-items: center; /* Środkuje elementy w pionie */
-  justify-content: center; /* Układa całą grupę na środku ekranu */
-  gap: 15px; /* Robi ładny odstęp między logo a tekstem daty */
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
   margin-bottom: 25px;
 }
 
 .creator-logo-small {
-  width: 60px; /* Zmniejszamy logo, żeby pasowało do tekstu */
+  width: 60px;
   height: auto;
-  border-radius: 8px; /* Zachowujemy lekkie zaokrąglenie rogów */
+  border-radius: 8px;
 }
 
-/* Usuwamy domyślne marginesy daty, żeby równo stała z logo */
 .date-container .subtitle {
   margin: 0;
 }
 
-.map-image, .task-image {
+.task-image {
   width: 100%;
   max-width: 600px;
   height: auto;
@@ -136,4 +134,21 @@ footer {
   padding-top: 20px;
   margin-top: 40px;
   color: #6b7280;
+}
+
+.interactive-map-container {
+  width: 100%;
+  max-width: 600px; /* Zatrzymuje szerokość na komputerach */
+  margin: 0 auto 25px auto;
+  border-radius: 15px; /* Zaokrągla rogi */
+  overflow: hidden; /* Wymusza, by kanciaste rogi mapy Google zostały ucięte do zaokrąglenia */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Delikatny cień */
+  background-color: #e5e7eb; /* Tło zastępcze podczas ładowania mapy */
+}
+
+.interactive-map {
+  width: 100%;
+  height: 450px; /* Optymalna wysokość do wygodnego przeglądania na telefonie */
+  border: none;
+  display: block;
 }

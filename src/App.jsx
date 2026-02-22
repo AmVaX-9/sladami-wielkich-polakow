@@ -1,4 +1,3 @@
-// 1. Zmień import na HashRouter
 import { HashRouter as Router, Routes, Route, useParams } from 'react-router-dom';
 import './App.css';
 
@@ -64,7 +63,6 @@ function TaskPage() {
         <div className="container">
             <h2>{task.name}</h2>
 
-            {/* NOWA SEKCJA: Wyświetlanie wielu obrazków (jeśli istnieją) */}
             {task.images && task.images.map((imageFile, index) => (
                 <img
                     key={index}
@@ -74,7 +72,6 @@ function TaskPage() {
                 />
             ))}
 
-            {/* STARA SEKCJA: Wyświetlanie pojedynczego obrazka (dla reszty postaci) */}
             {task.img && (
                 <img src={`assets/${task.img}`} alt={task.name} className="task-image" />
             )}
@@ -102,7 +99,15 @@ function Home() {
 
             </header>
 
-            <img src="assets/mapa-lublin.jpg" alt="Mapa gry" className="map-image" />
+            <div className="interactive-map-container">
+                <iframe
+                    src="https://www.google.com/maps/d/edit?mid=1eSk8bzMUuHuczebPE8UWC5YhhYzjilQ&ll=51.249882566566896%2C22.568986212928607&z=14"
+                    className="interactive-map"
+                    title="Mapa punktów gry terenowej"
+                    loading="lazy"
+                    allowFullScreen
+                ></iframe>
+            </div>
 
             <div className="info-card">
                 <p>Znajdź punkty na mapie i zeskanuj kody QR!</p>
@@ -151,7 +156,6 @@ export default function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
-                {/* Usunięcie /zadanie/ sprawi, że linki będą krótsze */}
                 <Route path="/:slug" element={<TaskPage />} />
             </Routes>
         </Router>
