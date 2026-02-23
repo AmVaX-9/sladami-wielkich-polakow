@@ -26,6 +26,55 @@ body {
   text-align: center;
 }
 
+/* --- PŁYNNE PRZEWIJANIE --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- PŁYWAJĄCE MENU --- */
+.floating-nav {
+  position: sticky;
+  top: 0;
+  background-color: rgba(254, 243, 199, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 10px;
+  margin: -20px 0 20px 0;
+  z-index: 1000;
+  border-bottom: 2px solid var(--primary);
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.floating-nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.floating-nav a:hover {
+  color: var(--primary);
+}
+
+/* Wymusza margines przy przewijaniu, żeby menu nie zasłaniało tytułów sekcji */
+#mapa, #regulamin, #o-projekcie, #kontakt {
+  scroll-margin-top: 80px;
+}
+
+@media (min-width: 600px) {
+  .floating-nav {
+    gap: 30px;
+  }
+  .floating-nav a {
+    font-size: 0.9rem;
+  }
+}
+
 /* --- NAGŁÓWEK I LOGO --- */
 .date-container {
   display: flex;

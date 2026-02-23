@@ -88,20 +88,26 @@ function TaskPage() {
 function Home() {
     return (
         <div className="container">
+            {/* --- NOWE PŁYWAJĄCE MENU --- */}
+            <nav className="floating-nav">
+                <a href="#mapa">MAPA</a>
+                <a href="#regulamin">REGULAMIN</a>
+                <a href="#o-projekcie">O PROJEKCIE</a>
+                <a href="#kontakt">KONTAKT</a>
+            </nav>
 
             <header>
                 <h1>Śladami Wielkich Polaków</h1>
-
                 <div className="date-container">
-                    <img src="assets/LoGoS.png" alt="Logo twórców" className="creator-logo-small" />
+                    <img src="assets/logo.jfif" alt="Logo twórców" className="creator-logo-small" />
                     <p className="subtitle">02.03 - 27.03.2026 | Lublin</p>
                 </div>
-
             </header>
 
-            <div className="interactive-map-container">
+            {/* ID: mapa */}
+            <div id="mapa" className="interactive-map-container">
                 <iframe
-                    src="https://www.google.com/maps/d/embed?mid=1eJGEGYWipj_PNBLzcO6b9FqDX1_2CBo&ehbc=2E312F"
+                    src="https://www.google.com/maps/d/embed?mid=TUTAJ_BEDZIE_TWOJE_ID_MAPY"
                     className="interactive-map"
                     title="Mapa punktów gry terenowej"
                     loading="lazy"
@@ -109,20 +115,25 @@ function Home() {
                 ></iframe>
             </div>
 
-            <div className="info-card">
+            {/* ID: regulamin */}
+            <div id="regulamin" className="info-card">
                 <p>Znajdź punkty na mapie i zeskanuj kody QR!</p>
                 <p className="prize-text">Nagrody do 200 PLN czekają!</p>
-                <a href="REGULAMIN.pdf" target="_blank" className="btn-reg">REGULAMIN GRY</a>
+                <a href="REGULAMIN.pdf" target="_blank" className="btn-reg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    REGULAMIN GRY
+                </a>
                 <p className="terms-text">Biorąc udział w grze akceptujesz regulamin!</p>
             </div>
 
-            <section className="about-section">
+            {/* ID: o-projekcie */}
+            <section id="o-projekcie" className="about-section">
                 <h3>O PROJEKCIE</h3>
                 <p>
                     Gra terenowa <strong>„Śladami Wielkich Polaków”</strong> to inicjatywa edukacyjno-społeczna realizowana na terenie Lublina, której celem jest wzmacnianie odporności społecznej poprzez przypominanie dorobku Wielkich Polaków. Wierzymy, że rezyliencji nie buduje się samą teorią. Buduje się ją poprzez kontakt z prawdziwymi historiami ludzi, którzy mimo trudności potrafili działać, podejmować decyzje i zmieniać rzeczywistość wokół siebie.
                 </p>
                 <p>
-                    Gra łączy ruch w przestrzeni miejskiej z refleksją nad historią i odpowiedzialnością za własny rozwój. W 10 lokalizacjach na terenie Lublina umieszczone zostały plakaty z kodami QR. Po ich zeskanowaniu uczestnicy poznają krótką historię wybitnej postaci związanej z Lubelszczyzną oraz otrzymają zadanie konkursowe. Każda z tych historii pokazuje, że odporność psychiczna, systematyczność i gotowość do działania były realnym fundamentem sukcesu.
+                    Gra łączy ruch w przestrzeni miejskiej z refleksją nad historią i odpowiedzialnością za własny rozwój. W 10 lokalizacjach na terenie Lublina umieszczone zostaną plakaty z kodami QR. Po ich zeskanowaniu uczestnicy poznają krótką historię wybitnej postaci związanej z Lubelszczyzną oraz otrzymają zadanie konkursowe. Każda z tych historii pokazuje, że odporność psychiczna, systematyczność i gotowość do działania były realnym fundamentem sukcesu.
                 </p>
                 <p>
                     Poprzez upamiętnianie dorobku tych postaci chcemy pokazać, że odporność społeczna nie jest chwilowym trendem, ale wartością, która od pokoleń pozwalała budować kulturę, naukę, instytucje i wspólnotę. Rezyliencja to umiejętność podnoszenia się po porażkach, konsekwencja w dążeniu do celu i odpowiedzialność za innych.
@@ -143,7 +154,8 @@ function Home() {
                 </p>
             </section>
 
-            <section className="contact-section">
+            {/* ID: kontakt */}
+            <section id="kontakt" className="contact-section">
                 <h3>KONTAKT</h3>
                 <p>Masz pytania? Śledź nas na Instagramie lub napisz do nas maila!</p>
 
@@ -170,7 +182,7 @@ function Home() {
 
             <footer>
                 <p>Projekt realizowany przez <strong>„Nie prześpij jutra”</strong></p>
-                <p>w ramach Ogólnopolskiej Olimpiady „Zwolnieni z Teorii”</p>
+                <p>w ramach ogólnopolskiej olimpiady „Zwolnieni z Teorii”</p>
             </footer>
         </div>
     );
