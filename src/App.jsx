@@ -143,6 +143,29 @@ function Home() {
                 </p>
             </section>
 
+            <section className="contact-section">
+                <h3>KONTAKT</h3>
+                <p>Masz pytania? Śledź nas na Instagramie lub napisz do nas maila!</p>
+
+                <div className="contact-buttons">
+                    <a
+                        href="https://www.instagram.com/nie.przespij.jutra/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-insta"
+                    >
+                        @nie.przespij.jutra
+                    </a>
+
+                    <a
+                        href="mailto:nie.przespij.jutra@gmail.com"
+                        className="btn-email"
+                    >
+                        nie.przespij.jutra@gmail.com
+                    </a>
+                </div>
+            </section>
+
             <footer>
                 <p>Projekt realizowany przez <strong>„Nie prześpij jutra”</strong></p>
                 <p>w ramach Ogólnopolskiej Olimpiady „Zwolnieni z Teorii”</p>

@@ -152,3 +152,59 @@ footer {
   border: none;
   display: block;
 }
+
+.contact-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid #fde68a;
+}
+
+.contact-section h3 {
+  color: var(--primary);
+  margin-top: 0;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.contact-section p {
+  margin-bottom: 20px;
+  color: #4b5563;
+}
+
+.contact-section .btn-insta {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn-email {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  background-color: #1f2937; /* Ciemny kolor dla odróżnienia od Instagrama */
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.btn-email:hover {
+  transform: scale(1.02);
+}
+
+@media (min-width: 600px) {
+  .contact-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
