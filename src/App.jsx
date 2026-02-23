@@ -86,14 +86,23 @@ function TaskPage() {
 }
 
 function Home() {
+
+    const scrollTo = (e, id) => {
+        e.preventDefault();
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <div className="container">
-            {/* --- NOWE PŁYWAJĄCE MENU --- */}
+            {/* --- PŁYWAJĄCE MENU (NAPRAWIONE) --- */}
             <nav className="floating-nav">
-                <a href="#mapa">MAPA</a>
-                <a href="#regulamin">REGULAMIN</a>
-                <a href="#o-projekcie">O PROJEKCIE</a>
-                <a href="#kontakt">KONTAKT</a>
+                <a href="#/" onClick={(e) => scrollTo(e, 'mapa')}>MAPA</a>
+                <a href="#/" onClick={(e) => scrollTo(e, 'regulamin')}>REGULAMIN</a>
+                <a href="#/" onClick={(e) => scrollTo(e, 'o-projekcie')}>O PROJEKCIE</a>
+                <a href="#/" onClick={(e) => scrollTo(e, 'kontakt')}>KONTAKT</a>
             </nav>
 
             <header>
