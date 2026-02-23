@@ -11,6 +11,7 @@ body {
   color: var(--dark);
   display: flex;
   justify-content: center;
+  min-height: 100vh; /* Zapewnia tło na całej wysokości */
 }
 
 #root {
@@ -25,6 +26,7 @@ body {
   text-align: center;
 }
 
+/* --- NAGŁÓWEK I LOGO --- */
 .date-container {
   display: flex;
   align-items: center;
@@ -34,13 +36,33 @@ body {
 }
 
 .creator-logo-small {
-  width: 60px;
+  width: 50px;
   height: auto;
   border-radius: 8px;
 }
 
-.date-container .subtitle {
+.subtitle {
+  color: #b45309;
+  font-weight: bold;
   margin: 0;
+}
+
+/* --- MAPA I ZDJĘCIA --- */
+.interactive-map-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 25px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background-color: #e5e7eb;
+}
+
+.interactive-map {
+  width: 100%;
+  height: 450px;
+  border: none;
+  display: block;
 }
 
 .task-image {
@@ -53,36 +75,13 @@ body {
   display: inline-block;
 }
 
+/* --- KARTY I SEKCJE --- */
 .task-card, .info-card {
   background: white;
   padding: 20px;
   border-radius: 15px;
   margin-bottom: 20px;
   border-left: 5px solid var(--primary);
-}
-
-.btn-insta, .btn-reg {
-  display: block;
-  background-color: var(--primary);
-  color: white;
-  padding: 15px;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-  margin-top: 15px;
-  transition: transform 0.2s;
-}
-
-.btn-back {
-  display: inline-block;
-  margin-top: 10px;
-  color: var(--dark);
-  text-decoration: underline;
-}
-
-.subtitle {
-  color: #b45309;
-  font-weight: bold;
 }
 
 .about-section {
@@ -104,13 +103,6 @@ body {
   margin-bottom: 20px;
 }
 
-.prize-text {
-  font-weight: bold;
-  color: #d97706;
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
 .quote-box {
   background: #fffbeb;
   border-left: 4px solid var(--primary);
@@ -120,11 +112,72 @@ body {
   color: #92400e;
 }
 
+/* --- PRZYCISKI --- */
+.btn-insta, .btn-reg, .btn-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Odstęp na ikonkę */
+  background-color: var(--primary);
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-email {
+  background-color: #1f2937;
+  margin-top: 0; /* Reset dla kontenera flex */
+}
+
+.btn-insta:hover, .btn-reg:hover, .btn-email:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+/* --- SEKCJA KONTAKT --- */
+.contact-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid #fde68a;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-buttons .btn-insta,
+.contact-buttons .btn-email {
+  width: 100%;
+  max-width: 300px;
+  margin: 0; /* Ważne dla poprawnego odstępu w gap */
+}
+
+/* --- STOPKA I INNE --- */
+.prize-text {
+  font-weight: bold;
+  color: #d97706;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
 .terms-text {
   font-size: 0.75rem;
   color: #6b7280;
   margin-top: 12px;
-  margin-bottom: 0;
 }
 
 footer {
@@ -136,72 +189,7 @@ footer {
   color: #6b7280;
 }
 
-.interactive-map-container {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto 25px auto;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  background-color: #e5e7eb;
-}
-
-.interactive-map {
-  width: 100%;
-  height: 450px;
-  border: none;
-  display: block;
-}
-
-.contact-section {
-  margin: 40px 0;
-  padding: 20px;
-  background-color: white;
-  border-radius: 15px;
-  border: 1px solid #fde68a;
-}
-
-.contact-section h3 {
-  color: var(--primary);
-  margin-top: 0;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-}
-
-.contact-section p {
-  margin-bottom: 20px;
-  color: #4b5563;
-}
-
-.contact-section .btn-insta {
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-.contact-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-}
-
-.btn-email {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  background-color: #1f2937; /* Ciemny kolor dla odróżnienia od Instagrama */
-  color: white;
-  padding: 15px;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-  transition: transform 0.2s;
-}
-
-.btn-email:hover {
-  transform: scale(1.02);
-}
-
+/* --- RESPONSYWNOŚĆ --- */
 @media (min-width: 600px) {
   .contact-buttons {
     flex-direction: row;
