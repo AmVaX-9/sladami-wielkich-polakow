@@ -190,6 +190,12 @@ function Home() {
             </section>
 
             <footer>
+                <div className="partners-container">
+                    <p className="partners-title">Partner wspierający:</p>
+                    <a href="https://fundacjainspira.pl" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/Inspira.png" alt="Fundacja Inspira" className="partner-logo" />
+                    </a>
+                </div>
                 <p>Projekt realizowany przez <strong>„Nie prześpij jutra”</strong></p>
                 <p>w ramach ogólnopolskiej olimpiady „Zwolnieni z Teorii”</p>
             </footer>
