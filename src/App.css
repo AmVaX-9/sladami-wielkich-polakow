@@ -11,7 +11,7 @@ body {
   color: var(--dark);
   display: flex;
   justify-content: center;
-  min-height: 100vh; /* Zapewnia tło na całej wysokości */
+  min-height: 100vh;
 }
 
 #root {
@@ -50,7 +50,7 @@ body {
 /* --- MAPA I ZDJĘCIA --- */
 .interactive-map-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto 25px auto;
   border-radius: 15px;
   overflow: hidden;
@@ -67,7 +67,7 @@ body {
 
 .task-image {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -112,12 +112,11 @@ body {
   color: #92400e;
 }
 
-/* --- PRZYCISKI --- */
 .btn-insta, .btn-reg, .btn-email {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; /* Odstęp na ikonkę */
+  gap: 10px;
   background-color: var(--primary);
   color: white;
   padding: 15px;
@@ -130,7 +129,7 @@ body {
 
 .btn-email {
   background-color: #1f2937;
-  margin-top: 0; /* Reset dla kontenera flex */
+  margin-top: 0;
 }
 
 .btn-insta:hover, .btn-reg:hover, .btn-email:hover {
@@ -142,7 +141,6 @@ body {
   flex-shrink: 0;
 }
 
-/* --- SEKCJA KONTAKT --- */
 .contact-section {
   margin: 40px 0;
   padding: 20px;
@@ -163,10 +161,9 @@ body {
 .contact-buttons .btn-email {
   width: 100%;
   max-width: 300px;
-  margin: 0; /* Ważne dla poprawnego odstępu w gap */
+  margin: 0;
 }
 
-/* --- STOPKA I INNE --- */
 .prize-text {
   font-weight: bold;
   color: #d97706;
@@ -189,7 +186,6 @@ footer {
   color: #6b7280;
 }
 
-/* --- RESPONSYWNOŚĆ --- */
 @media (min-width: 600px) {
   .contact-buttons {
     flex-direction: row;
