@@ -99,7 +99,7 @@ function Home() {
             <header>
                 <h1>Śladami Wielkich Polaków</h1>
                 <div className="date-container">
-                    <img src="assets/logo.jfif" alt="Logo twórców" className="creator-logo-small" />
+                    <img src="assets/LoGoS.png" alt="Logo twórców" className="creator-logo-small" />
                     <p className="subtitle">02.03 - 27.03.2026 | Lublin</p>
                 </div>
             </header>
@@ -107,7 +107,7 @@ function Home() {
             {/* ID: mapa */}
             <div id="mapa" className="interactive-map-container">
                 <iframe
-                    src="https://www.google.com/maps/d/embed?mid=TUTAJ_BEDZIE_TWOJE_ID_MAPY"
+                    src="https://www.google.com/maps/d/embed?mid=1eJGEGYWipj_PNBLzcO6b9FqDX1_2CBo&ehbc=2E312F"
                     className="interactive-map"
                     title="Mapa punktów gry terenowej"
                     loading="lazy"
