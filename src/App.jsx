@@ -197,7 +197,7 @@ function Home() {
                     </a>
                 </div>
                 <p>Projekt realizowany przez <strong>„Nie prześpij jutra”</strong></p>
-                <p>w ramach ogólnopolskiej olimpiady „Zwolnieni z Teorii”</p>
+                <p>w ramach Ogólnopolskiej Olimpiady „Zwolnieni z Teorii”</p>
             </footer>
         </div>
     );
