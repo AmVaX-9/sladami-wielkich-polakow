@@ -80,7 +80,7 @@ function TaskPage() {
                 <p>{task.prompt}</p>
                 <a href="https://www.instagram.com/nie.przespij.jutra/" target="_blank" rel="noopener noreferrer" className="btn-insta">WYŚLIJ NA INSTAGRAM</a>
             </div>
-            <a href="#/" className="btn-back">Wstecz do mapy</a>
+            <a href="#/" className="btn-back" onClick={() => window.scrollTo(0, 0)}>Wstecz do mapy</a>
         </div>
     );
 }
@@ -97,7 +97,7 @@ function Home() {
 
     return (
         <div className="container">
-            {/* --- PŁYWAJĄCE MENU (NAPRAWIONE) --- */}
+            {/* --- PŁYWAJĄCE MENU --- */}
             <nav className="floating-nav">
                 <a href="#/" onClick={(e) => scrollTo(e, 'mapa')}>MAPA</a>
                 <a href="#/" onClick={(e) => scrollTo(e, 'regulamin')}>REGULAMIN</a>
